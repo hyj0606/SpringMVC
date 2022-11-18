@@ -21,7 +21,7 @@ public class BuyCarController {
     //@ResponseBody
     public String test1(){
 
-        //返回不同形式的数据
+        // 返回不同形式的数据
         return "success";
     }
 
@@ -31,8 +31,7 @@ public class BuyCarController {
 
         Goods goods = new Goods(1,"红茶",20);
 
-        //返回不同形式的数据
+        //返回不同形式的数据: 对象
         return goods;
     }
-
 }
