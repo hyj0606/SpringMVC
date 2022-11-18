@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //@RequestMapping("/order")
 public class OrderController {
 
-    //响应: 网页视图
+    //响应: 视图网页.
     @RequestMapping("/order1")
     public String t1(){
 
@@ -25,6 +25,7 @@ public class OrderController {
     @RequestMapping("/order2")
     public String t2(){
 
+        //return "forward:order.jsp";
         return "redirect:order.jsp";
     }
 
