@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <form action="${pageContext.request.contextPath}/user3">
+    <form action="${pageContext.request.contextPath}/user3" method="post">
         <p>
             账号:<input type="text" name="username" value="${username}" />
         </p>
