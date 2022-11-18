@@ -24,7 +24,7 @@ public class EmployController {
 
     //体现员工修改:
     @PostMapping
-    public String edit( Employ e1){
+    public String edit(Employ e1){
         System.out.println("模拟正在修改员工..."+e1.getEmpName()+"---"+e1.getId());
         return "2";
     }
