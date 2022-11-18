@@ -25,8 +25,8 @@ public class UserController {
 
         //传递数据并响应页面
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("index.jsp");
-        mv.addObject("nickName","王");
+        mv.setViewName("index.jsp");//指定要跳转的视图
+        mv.addObject("nickName","王");//指定要响应的数据
 
         return mv;
     }
@@ -42,12 +42,12 @@ public class UserController {
     }
 
     @RequestMapping("/user3")
-    public String test3(@ModelAttribute(name = "username") String username,@ModelAttribute(name = "password") String password){
+    public String test3(@ModelAttribute(name = "username") String username, @ModelAttribute(name = "password") String password){
 
         //传递数据并响应页面
+        System.out.println("识别到的数据为: "+username+"---"+password);
         System.out.println("模拟登录...模拟失败");
 
         return "login.jsp";
     }
-
 }
