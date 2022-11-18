@@ -117,7 +117,7 @@ public class GoodsTypeController {
     }
 
     //日期类型: 客户端将传递格式: String("2022-11-18 08:48:00") ----> Date bornDate
-    //解决: 1.@DateTimeFormat完成自动类型转换, 2.在springMVC在容器中可自定义类型转换器  -->任意类型
+    //解决: 1.@DateTimeFormat完成自动类型转换, 2.在springMVC在容器中可自定义类型转换器. String-->任意类型
     @RequestMapping("/t6")
     @ResponseBody
     public String test6(@DateTimeFormat (pattern = "yyyy-MM-dd hh:mm:ss") Date bornDate){
