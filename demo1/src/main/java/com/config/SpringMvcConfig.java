@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 @Configuration
 @ComponentScan(basePackages = {"com.controller"})
-@EnableWebMvc
+@EnableWebMvc //自定义配置
 public class SpringMvcConfig extends WebMvcConfigurationSupport {
 
 
