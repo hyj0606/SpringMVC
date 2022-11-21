@@ -1,6 +1,5 @@
 package com.web;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,5 +24,4 @@ public class UserController {
         System.out.println("欢迎来到后台");
         return "ok2";
     }
-
 }
