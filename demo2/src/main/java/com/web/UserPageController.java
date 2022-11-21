@@ -15,8 +15,7 @@ public class UserPageController {
 
     @RequestMapping("/login")
     public String t1(){
-
-        return "login.jsp";
+        return "login";
     }
 
 }
