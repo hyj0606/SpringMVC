@@ -17,12 +17,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 @Configuration
 @ComponentScan(basePackages = {"com.web"})
-@EnableWebMvc //自定义配置
+//@EnableWebMvc //自定义配置
 public class SpringMvcConfig extends WebMvcConfigurationSupport {
 
     //自定义springMVC容器配置工具:
 
 
+    //拦截器工具
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
 
@@ -30,7 +31,7 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport {
         MyInterceptor my1 = new MyInterceptor();
 
         //注册安装拦截器:
-        registry.addInterceptor(my1).addPathPatterns("/front/*");
+        registry.addInterceptor(my1).addPathPatterns("/*/*");
 
     }
 }
