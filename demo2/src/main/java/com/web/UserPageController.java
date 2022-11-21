@@ -18,4 +18,15 @@ public class UserPageController {
         return "login";
     }
 
+    @RequestMapping("/index")
+    public String t2(int no){
+        if (no == 1) {
+            Object o1 = null;
+            String info = o1.toString(); //将产生:NullPointException异常
+        }else if (no == 2){
+            int a = 10/0; //将产生:ArithmeticException异常
+        }
+
+        return "index";
+    }
 }

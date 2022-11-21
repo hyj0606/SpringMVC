@@ -1,10 +1,15 @@
 package com.config;
 
+import com.utils.MyExceptionResolver;
 import com.utils.MyInterceptor;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+import java.util.List;
 
 /**
  * @ClassName SpringMvcConfig
@@ -15,7 +20,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 
 @Configuration
-@ComponentScan(basePackages = {"com.web"})
+@ComponentScan(basePackages = {"com.web","com.utils"})
 //@EnableWebMvc //自定义配置
 public class SpringMvcConfig extends WebMvcConfigurationSupport {
 
@@ -53,6 +58,23 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport {
         resolver.setSuffix(".jsp");
 
         registry.viewResolver(resolver);
-
     }
+
+    //自定义异常处理器: 采用的是系统提供的一种处理器
+    /*@Override
+    protected void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
+
+        //提供系统异常处理器对象:
+        *//*SimpleMappingExceptionResolver resolver = new SimpleMappingExceptionResolver();
+        resolver.setDefaultErrorView("error");*//*
+
+        //使用自定义异常处理器
+        *//*MyExceptionResolver resolver = new MyExceptionResolver();*//*
+
+
+        //配置到系统中:
+        exceptionResolvers.add(resolver);
+
+    }*/
+
 }
