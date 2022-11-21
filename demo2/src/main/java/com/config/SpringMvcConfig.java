@@ -4,12 +4,9 @@ import com.utils.MyExceptionResolver;
 import com.utils.MyInterceptor;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.*;
-import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import java.util.List;
 
 /**
  * @ClassName SpringMvcConfig
