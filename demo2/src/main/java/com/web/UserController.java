@@ -17,13 +17,13 @@ public class UserController {
     @RequestMapping("/front/index")
     public String t1(){
         System.out.println("欢迎来到前台");
-        return "ok";
+        return "ok1";
     }
 
     @RequestMapping("/admin/index")
     public String t2(){
         System.out.println("欢迎来到后台");
-        return "ok";
+        return "ok2";
     }
 
 }
