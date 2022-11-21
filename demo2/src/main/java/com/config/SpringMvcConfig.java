@@ -33,8 +33,6 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport {
     }
 
     //提供静态资源的访问配置:
-
-
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
 
@@ -43,7 +41,6 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/common/imgs/**").addResourceLocations("/common/imgs/");
         registry.addResourceHandler("/common/css/**").addResourceLocations("/common/css/");
         registry.addResourceHandler("/common/js/**").addResourceLocations("/common/js/");
-
     }
 
     //视图解析器: 根据提供的视图名称,搜索解析
