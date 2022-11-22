@@ -71,7 +71,7 @@ public class SaveInfoServlet extends HttpServlet {
                 }
 
                 //文件地址传递回去:提供下载和预览
-                req.setAttribute("file_path",parent+newFile);
+                req.setAttribute("file_path",newFile);
 
                 //5.响应: 跳往下载页面
                 req.getRequestDispatcher("/down.jsp").forward(req,resp);

@@ -45,7 +45,5 @@ public class DownServlet extends HttpServlet {
         //2.声明响应头之客户端为: 下载方式
 
         //3.开始响应:
-
-
     }
 }
