@@ -20,8 +20,8 @@
       --%>
       <img src="http://img_server:80/${file_path}" />
 
-        <button onclick="location.href='${pageContext.request.contextPath}/down?file=${file_path}'">
-
+        <button onclick="location.href='${pageContext.request.contextPath}/down2?file=${file_path}'">
+            下载
         </button>
 
 </body>
